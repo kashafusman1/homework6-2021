@@ -67,7 +67,7 @@ body{
     }
   }
 
-@media screen and (min-width: 850px){
+  @media screen and (min-width: 850px){
     header {
         display: flex;
         flex-direction: row;
@@ -77,6 +77,27 @@ body{
         left: 0;
         right: 0;
         }
+        
+    .card {
+            display: flex;
+            flex-basis: 250px;
+            }
+  
+  
+    .pricing {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 250px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .nav_links {
+        flex-direction: row;
+    }
+  
+    }
   
 @media print {
   body{
@@ -108,3 +129,11 @@ body{
     flex-basis: 250px;
     flex-wrap: nowrap;
   }
+  .card ul li:nth-child(even)::after {
+    content: "\1F44D";
+  }
+
+  .card ul li:nth-child(odd)::before {
+    content: "\1F44D";
+  }
+}
