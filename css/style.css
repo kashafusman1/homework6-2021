@@ -3,19 +3,18 @@ body{
   background-image: url("../images/concrete_seamless.png");
   background-color: #f1f1f1;
 }
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .nav_links{
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 nav ul li a:visited{
@@ -30,13 +29,13 @@ nav ul li a:visited{
   flex-direction: column;
 }
 
-  .gallery img {
+.gallery img {
     border: 10px solid #50C7C7;
     width: 300px;
     margin: 10px;
   }
 
-  .gallery {
+.gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,13 +43,13 @@ nav ul li a:visited{
     justify-content: center;
   }
 
-  .card {
+.card {
     display: flex;
     flex-basis: 450px;
     flex-direction: column;
   }
   
-  .card header {
+.card header {
     background: #288088;
     border: 2px solid #45ADAD;
     padding-top: 20px;
@@ -64,6 +63,7 @@ nav ul li a:visited{
     animation-iteration-count: 1;
     animation-duration: 5s;
   }
+
   @keyframes animated_logo_grow{
   from {
     width: 50px;
@@ -91,6 +91,11 @@ nav ul li a:visited{
         left: 0;
         right: 0;
         }
+
+    body > header {
+          position: sticky;
+          top: 0px;
+          }
         
     .card {
             display: flex;
@@ -120,7 +125,6 @@ nav ul li a:visited{
     font-family: serif;
     
   }
-
   .nav_links{
     display: flex;
     flex-direction: row;
@@ -145,4 +149,11 @@ nav ul li a:visited{
     flex-wrap: nowrap;
   }
 
+  .card ul li:nth-child(even)::after {
+    content: "\1F44D";
+  }
+
+  .card ul li:nth-child(odd)::before {
+    content: "\1F44D";
+  }
 }
