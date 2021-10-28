@@ -1,27 +1,55 @@
 body{
-    font-family: 'Alegreya Sans SC', serif;
-    background-image: url("../images/concrete_seamless.png");
-    background-color: #f1f1f1;
+  font-family: 'Alegreya Sans SC', serif;
+  background-image: url("../images/concrete_seamless.png");
+  background-color: #f1f1f1;
+}
+
+.nav_links{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a:visited{
+  color: #00e;
+}
+
+.pricing{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+  .gallery img {
+    border: 10px solid #50C7C7;
+    width: 300px;
+    margin: 10px;
   }
 
-  header{
+  .gallery {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
 
-  nav ul li a:visited{
-    color: #00e;
+  .card {
+    display: flex;
+    flex-basis: 450px;
+    flex-direction: column;
   }
   
-  .nav_links{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .card header {
     background: #288088;
     border: 2px solid #45ADAD;
@@ -30,20 +58,6 @@ body{
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     }
-  
-  .pricing{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-  .gallery img {
-    border: 10px solid #50C7C7;
-    width: 300px;
-    margin: 10px;
-  }
 
   #logo{
     animation-name: animated_logo_grow;
@@ -103,6 +117,7 @@ body{
   body{
     background-image: none;
     background-color: #f1f1f1;
+    font-family: serif;
     
   }
 
@@ -129,11 +144,5 @@ body{
     flex-basis: 250px;
     flex-wrap: nowrap;
   }
-  .card ul li:nth-child(even)::after {
-    content: "\1F44D";
-  }
 
-  .card ul li:nth-child(odd)::before {
-    content: "\1F44D";
-  }
 }
